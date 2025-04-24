@@ -10,7 +10,7 @@ document.querySelectorAll('li').forEach((li) => {
 
     span.textContent = textNode.textContent.trim();
     textNode.textContent = '';
-    li.insertBefore(span, li.firstChild);
+    li.replaceChild(span, li.firstChild);
   });
 });
 
